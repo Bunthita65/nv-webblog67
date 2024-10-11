@@ -77,4 +77,5 @@ export default new Router({
       component: Upload
     },
   ]
+  
 })
