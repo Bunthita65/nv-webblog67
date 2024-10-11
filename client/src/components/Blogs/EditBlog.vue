@@ -86,10 +86,10 @@ export default {
       pictures: [],
       pictureIndex: 0,
       blog: {
-        title: "",
+        name: "",
         thumbnail: "null",
         pictures: "null",
-        content: "",
+        details: "",
         category: "",
         status: "",
       },
