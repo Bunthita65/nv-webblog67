@@ -1,25 +1,25 @@
 <template>
   <div class="create-user-container">
-    <h1>สร้างผู้ใช้</h1>
+    <h1>Create a user</h1>
     <form @submit.prevent="createUser" class="user-form">
       <div class="form-group">
-        <label for="name">ชื่อ:</label>
+        <label for="name">Name :</label>
         <input type="text" id="name" v-model="user.name" required />
       </div>
       <div class="form-group">
-        <label for="lastname">นามสกุล:</label>
+        <label for="lastname">LastName :</label>
         <input type="text" id="lastname" v-model="user.lastname" required />
       </div>
       <div class="form-group">
-        <label for="email">อีเมล:</label>
+        <label for="email">Gmail :</label>
         <input type="email" id="email" v-model="user.email" required />
       </div>
       <div class="form-group">
-        <label for="password">รหัสผ่าน:</label>
+        <label for="password">Password :</label>
         <input type="password" id="password" v-model="user.password" required />
       </div>
       <div class="form-group">
-        <button type="submit" class="btn create-btn">สร้างผู้ใช้</button>
+        <button type="submit" class="btn create-btn">Create a user</button>
       </div>
     </form>
   </div>

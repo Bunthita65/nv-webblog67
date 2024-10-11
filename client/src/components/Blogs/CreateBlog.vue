@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Create Blog</h1>
+    <h1>Create Art Work</h1>
     <form v-on:submit.prevent="createBlog">
       <p>
-        title:
+        Name:
         <input type="text" v-model="blog.title" />
       </p>
       <transition name="fade">
@@ -52,7 +52,7 @@
         <div class="clearfix"></div>
       </div>
       <p>
-        <strong>content:</strong>
+        <strong>Details:</strong>
       </p>
       <vue-ckeditor
         v-model.lazy="blog.content"
@@ -61,7 +61,7 @@
         @focus="onFocus($event)"
       />
       <p>
-        category:
+        Category:
         <input type="text" v-model="blog.category" />
       </p>
       <p>

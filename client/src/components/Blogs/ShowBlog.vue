@@ -1,6 +1,6 @@
 <template>
     <div class="blog-show-container">
-      <h1>Show Blog</h1>
+      <h1>Show Art Wort</h1>
       <div class="blog-details">
         <p><strong>ID:</strong> {{ blog.id }}</p>
         <p><strong>Title:</strong> {{ blog.title }}</p>
@@ -9,8 +9,8 @@
         <p><strong>Status:</strong> {{ blog.status }}</p>
       </div>
       <div class="action-buttons">
-        <button @click="navigateTo('/blog/edit/' + blog.id)" class="edit-button">แก้ไข blog</button>
-        <button @click="navigateTo('/blogs')" class="back-button">กลับ</button>
+        <button @click="navigateTo('/blog/edit/' + blog.id)" class="edit-button">Edit</button>
+        <button @click="navigateTo('/blogs')" class="back-button">back</button>
       </div>
     </div>
   </template>

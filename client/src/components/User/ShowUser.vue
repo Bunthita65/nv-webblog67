@@ -1,6 +1,6 @@
 <template>
   <div class="user-show-container">
-    <h1>แสดงข้อมูลผู้ใช้</h1>
+    <h1>Show user information</h1>
     <div class="user-info">
       <p><strong>ID:</strong> {{ user.id }}</p>
       <p><strong>Name:</strong> {{ user.name }}</p>

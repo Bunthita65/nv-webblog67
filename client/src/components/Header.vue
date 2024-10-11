@@ -98,8 +98,8 @@ export default {
   <div>
     <div class="nv-navbar">
       <ul class="nav">
-        <li><router-link :to="{ name: 'comments' }">Comments</router-link></li>
-        <li><router-link :to="{ name: 'blogs' }">Blogs</router-link></li>
+        <li><router-link :to="{ name: 'comments' }">Exhipition</router-link></li>
+        <li><router-link :to="{ name: 'blogs' }">Art Work</router-link></li>
         <li><router-link :to="{ name: 'users' }">Create User</router-link></li>
         <li><router-link :to="{ name: 'login' }">Login</router-link></li>  
       </ul>

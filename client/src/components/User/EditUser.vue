@@ -1,6 +1,6 @@
 <template>
   <div class="edit-user-container">
-    <h1>แก้ไขข้อมูลผู้ใช้</h1>
+    <h1>Edit user information</h1>
     <form @submit.prevent="editUser" class="edit-user-form">
       <div class="form-group">
         <label for="name">Name:</label>
@@ -19,8 +19,8 @@
         <input type="password" id="password" v-model="user.password" />
       </div>
       <div class="form-actions">
-        <button type="submit" class="btn save-btn">แก้ไขข้อมูล</button>
-        <button type="button" @click="goBack" class="btn cancel-btn">ยกเลิก</button>
+        <button type="submit" class="btn save-btn">Edit</button>
+        <button type="button" @click="goBack" class="btn cancel-btn">cancel</button>
       </div>
     </form>
   </div>

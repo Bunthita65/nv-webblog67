@@ -1,13 +1,13 @@
 <template>
   <div class="user-container">
-    <h1>Get All Users</h1>
+    <h1>Art Work</h1>
     <div class="action-buttons">
-      <button @click="navigateTo('/user/create')" class="btn create-btn">สร้างผู้ใช้</button>
+      <button @click="navigateTo('/user/create')" class="btn create-btn">Create a user</button>
     </div>
     <hr />
     <div v-if="users.length">
       <div class="user-count">
-        <b>จำนวนผู้ใช้งาน:</b> {{ users.length }}
+        <b>Number of users :</b> {{ users.length }}
       </div>
       <div class="user-list">
         <div v-for="user in users" :key="user.id" class="user-card">
@@ -19,9 +19,9 @@
             <div><b>Type:</b> {{ user.type }}</div>
           </div>
           <div class="user-actions">
-            <button @click="navigateTo('/user/' + user.id)" class="btn view-btn">ดูข้อมูล</button>
-            <button @click="navigateTo('/user/edit/' + user.id)" class="btn edit-btn">แก้ไขข้อมูล</button>
-            <button @click="deleteUser(user)" class="btn delete-btn">ลบข้อมูล</button>
+            <button @click="navigateTo('/user/' + user.id)" class="btn view-btn">See</button>
+            <button @click="navigateTo('/user/edit/' + user.id)" class="btn edit-btn">Edit</button>
+            <button @click="deleteUser(user)" class="btn delete-btn">Delete</button>
           </div>
         </div>
         <hr />
